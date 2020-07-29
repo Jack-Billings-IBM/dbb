@@ -96,9 +96,6 @@ def validateRequiredOpts(OptionAccessor opts) {
 	if (!opts.s) {
 		assert opts.s : 'Missing argument --sourceDir'
 	}
-	if (!opts.w) {
-		assert opts.w : 'Missing argument --workDir'
-	}
 	if (!opts.q) {
 		assert opts.q : 'Missing argument --hlq'
 	}
