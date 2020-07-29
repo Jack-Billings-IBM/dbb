@@ -39,17 +39,12 @@ def loadProperties(OptionAccessor opts) {
 	// One may also use YAML files as an alternative to properties files (DBB 1.0.6 and later):
 	//     def buildPropFile = new File("${getScriptDir()}/build.yaml")
 	def buildPropFile = new File("${getScriptDir()}/build.properties")
-	//def buildPropFile = new File("../build.properties")
-	println("test")
-	println("${getScriptDir()}/build.properties")
 	if (buildPropFile.exists())
    		BuildProperties.load(buildPropFile)
 
 	// set command line arguments
 	if (opts.s) properties.sourceDir = opts.s
-	println("properties.sourceDir")
 	if (opts.w) properties.workDir = opts.w
-	println("properties.workDir")
 	if (opts.b) properties.buildHash = opts.b
 	if (opts.q) properties.hlq = opts.q
 	if (opts.c) properties.collection = opts.c
