@@ -42,7 +42,6 @@ import groovy.time.*
 println("java.version="+System.getProperty("java.runtime.version"))
 println("java.home="+System.getProperty("java.home"))
 println("user.dir="+System.getProperty("user.dir"))
-println("work.dir="+System.getProperty("work.dir"))
  
 // load the Tools.groovy utility script
 def tools = loadScript(new File("Tools.groovy"))
